@@ -24,7 +24,7 @@ async function run(){
             res.send('ChitChat is running');
         });
 
-         /* Adding Posts */
+         /* Add Post*/
          app.post('/posts', async (req, res) => {
             const body = req.body;
             const result = await postsCollection.insertOne(body);
